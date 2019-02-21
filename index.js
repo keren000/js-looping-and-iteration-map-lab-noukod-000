@@ -5,8 +5,8 @@ function lowerCaseDrivers(array){
     });
 }
 
-function nameToAttributes(list){
-  return list.map(function(driver){
+function nameToAttributes(profile_user){
+  return profile_user.map(function(driver){
     const driverFirst = driver.split(' ')[0];
     const driverLast = driver.split(' ')[1];
 
@@ -14,8 +14,8 @@ function nameToAttributes(list){
   });
 }
 
-function attributesToPhrase(list){
-  return list.map(function(driver){
+function attributesToPhrase(attributes){
+  return attributes.map(function(driver){
     return `${driver.name} is from ${driver.hometown}`
   });
 }
